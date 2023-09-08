@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 /**
  * main - Entry point
  *
@@ -8,19 +9,15 @@
  */
 int main(void)
 {
-	char alphabet, M;
+	char alphabet = 'a';
 
-	alphabet = 'a';
 	while (alphabet <= 'z')
 	{
-		putchar(alphabet);
+		if (alphabet != 'e' && alphabet != 'q')
+		{
+			putchar(alphabet);
+		}
 		alphabet++;
-	}
-	M = alphabet + '32';
-	while (M <= 'Z')
-	{
-		putchar(M);
-		M++;
 	}
 	putchar('\n');
 	return (0);
