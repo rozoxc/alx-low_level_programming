@@ -18,8 +18,8 @@ int main(void)
 		if (num != 9)
 		{
 			putchar(',');
+			putchar(' ');
 		}
-		putchar(' ');
 		num++;
 	}
 	putchar('\n');
