@@ -26,9 +26,9 @@ int main(void)
 			if (a != 98)
 			{
 				putchar(',');
+				putchar(' ');
 			}
 			b++;
-			putchar(' ');
 		}
 		a++;
 	}
