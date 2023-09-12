@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 #include <unistd.h>
-/* function declaration */
+/**
+ * print_alphabet - print all lowercase alphabets followed by newline
+ */
+
 void  print_alphabet(void)
 {
 	char charater = 'a';
