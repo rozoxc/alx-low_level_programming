@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int i, s;
@@ -13,7 +19,8 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d \n", s);
+	printf("%d", s);
+	printf("\n");
 	return (0);
 
 }
