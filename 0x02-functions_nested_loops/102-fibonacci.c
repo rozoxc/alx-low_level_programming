@@ -19,7 +19,7 @@ int main(void)
 		printf("%ld", F[i]);
 		if (i != 51)
 		{
-			printf(" ,");
+			printf(", ");
 		}
 		i++;
 	}
