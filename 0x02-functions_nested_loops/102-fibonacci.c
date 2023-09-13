@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	long int F[50];
+	long int F[100];
 
 	F[0] = 0;
 	F[1] = 1;
@@ -23,7 +23,6 @@ int main(void)
 		}
 		i++;
 	}
-	i = 2;
 	printf("\n");
 	return (0);
 }
