@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned long long int F[50];
+	long int F[50];
 
 	F[0] = 0;
 	F[1] = 1;
@@ -21,7 +21,7 @@ int main(void)
 	i = 0;
 	while (i <= 49)
 	{
-		printf("%llu", F[i]);
+		printf("%ld", F[i]);
 		if (i != 49)
 		{
 			printf(" ,");
