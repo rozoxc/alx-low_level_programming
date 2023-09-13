@@ -13,21 +13,17 @@ int main(void)
 	F[0] = 0;
 	F[1] = 1;
 	i = 2;
-	while (i <= 50)
+	while (i <= 51)
 	{
 		F[i] = F[i - 1] + F[i - 2];
-		i++;
-	}
-	i = 0;
-	while (i <= 49)
-	{
 		printf("%ld", F[i]);
-		if (i != 49)
+		if (i != 51)
 		{
 			printf(" ,");
 		}
-		printf("\n");
 		i++;
 	}
+	i = 2;
+	printf("\n");
 	return (0);
 }
