@@ -3,4 +3,4 @@
 
 void positive_or_negative(int);
 
-#endif
+#endif /* MAIN_H */
