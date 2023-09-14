@@ -1,14 +1,8 @@
 #include "main.h"
 /**
- * _new_line - print space
- */
-void _new_line(void)
-{
-	_putchar('\n');
-}
-/**
  * more_numbers - print numbers from 0 to 14 10 times
  */
+
 void more_numbers(void)
 {
 	int num, i;
@@ -28,7 +22,7 @@ void more_numbers(void)
 				_putchar(num + '0');
 			num++;
 		}
-		_new_line();
+		_putchar('\n');
 		i++;
 	}
 }
