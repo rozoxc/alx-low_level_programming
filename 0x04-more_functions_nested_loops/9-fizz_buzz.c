@@ -27,7 +27,8 @@ int main(void)
 			printf("Buzz");
 			printf(" ");
 		}
-		printf("%d", i);
+		else
+			printf("%d", i);
 		printf(" ");
 		i++;
 	}
