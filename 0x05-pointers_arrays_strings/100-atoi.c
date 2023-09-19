@@ -20,15 +20,13 @@ int _atoi(char *s)
 				a *= -1;
 			i++;
 		}
-		if (s[i] >= 48 && s[i]  <= 57)
+		if (s[i] >= '0' && s[i]  <= '9')
 		{
-			while (s[i] >= 48 && s[i] <= 57)
+			while (s[i] >= '0' && s[i] <= '9')
 			{
-				c += (s[i] - 48);
-				c *= 10;
+				c = c * 10 + (s[i] - 48);
 				i++;
 			}
-			c /= 10;
 			return (c * a);
 		}
 		else
