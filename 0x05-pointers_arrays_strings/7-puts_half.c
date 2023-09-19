@@ -25,11 +25,11 @@ void puts_half(char *str)
 {
 	int i, x;
 
-	i = 0;
-	x = (_strlen(str) / 2) - 1;
+	i = 1;
+	x = (_strlen(str) / 2);
 	while (str[i] != '\0')
 	{
-		if (i > x)
+		if (i >= x)
 			_putchar(str[i]);
 		i++;
 	}
