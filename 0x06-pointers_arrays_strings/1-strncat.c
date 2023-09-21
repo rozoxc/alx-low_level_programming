@@ -1,27 +1,28 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * _strncat: function cat string to another
- * @dest: dest string
- * @src : src string
- * @n : size of string
- *
- * Return: return string
+ * _strncat - same behavior of strncat() (concatenates two strings.).
+ * @dest: destination.
+ * @src: source.
+ * @n: number of character to copy from src.
+ * Return: @dest.
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 0;
-	while (dest[i]  != '\0')
-		i++;
 	j = 0;
-	while ((j < n - 1) && src[j] != '\0')
+	while (dest[i])
+		i++;
+	while ((j < n) && src[j])
 	{
 		dest[i] = src[j];
-		j++;
 		i++;
+		j++;
 	}
-	 dest[i] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
-
