@@ -1,12 +1,4 @@
 #include <stdio.h>
-/**
- * _strncat - copy a string from the src to  dest whit limie size
- * @dest : destnination string
- * @src : source string
- * @n : the size to be copied
- *
- * Return: return destination string complete
- */
 
 char *_strncat(char *dest, char *src, int n)
 {
@@ -16,12 +8,12 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i]  != '\0')
 		i++;
 	 j = 0;
-	while (src[j] != '\0' && j < n - 1)
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	 while (src[j] != '\0' && j < n)
+	 {
+		 dest[i] = src[j];
+		 j++;
+	 }
+	 dest[i] = '\0';
+	 return (dest);
 }
+
