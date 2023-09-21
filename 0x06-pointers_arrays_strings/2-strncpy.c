@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * _strncpy - function copy string to another white specifide the size
- * @dest: the dedtination string
- * @src: the source string
- * @n : the size
- *
- * Return: return the destination
+ * _strncpy - same behavior of strncpy().
+ * @dest: destination.
+ * @src: source.
+ * @n: number of character to copy.
+ * Return: @dest.
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 
 	i = 0;
-	while (src[i] != '\0' && i > n)
+	while ((i < n) && src[i])
 	{
 		dest[i] = src[i];
 		i++;
