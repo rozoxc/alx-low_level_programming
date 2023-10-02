@@ -12,8 +12,10 @@ int main(int argc, char **argv)
 
 	i = 1;
 	j = 0;
-	while (i < argc && *argv[i] != '\0')
+	while (i < argc)
 	{
+		if (*argv[i] == '\0')
+			return (1);
 		j += atoi(argv[i]);
 		i++;
 	}
