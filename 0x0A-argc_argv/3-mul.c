@@ -17,6 +17,11 @@ int main(int argc, char **argv)
 		p *= atoi(argv[i]);
 		i++;
 	}
+	if (argc < 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	printf("%d\n", p);
 	return (0);
 }
