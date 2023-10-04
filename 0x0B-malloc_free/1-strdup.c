@@ -25,11 +25,11 @@ char *_strdup(char *str)
 	char *ptr;
 	int i, j, k;
 
+	if (str == NULL)
+		return (NULL);
 	i = _lenght(str) - 1;
 	k = _lenght(str);
 	j = 0;
-	if (str == NULL)
-		return (NULL);
 	ptr = malloc(sizeof(char) * (k + 1));
 	if (ptr == NULL)
 		exit(0);
