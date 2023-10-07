@@ -26,11 +26,10 @@ int _lenght(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int i, j, k, a, b;
+	unsigned int i, j, a, b;
 
 	i = _lenght(s2);
 	j = _lenght(s1);
-	k = i + j;
 	ptr = malloc(sizeof(char) * (j + n + 1));
 	if (ptr == NULL)
 		return (NULL);
