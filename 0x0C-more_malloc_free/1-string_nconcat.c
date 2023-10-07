@@ -5,6 +5,7 @@
  * @str: the string
  * Return: return the lenght
  */
+
 int _lenght(char *str)
 {
 	int i;
@@ -21,6 +22,7 @@ int _lenght(char *str)
  * @n: the size of the string to be concated
  * Return: return the full string
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
