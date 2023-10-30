@@ -14,12 +14,14 @@ int create_file(const char *filename, char *text_content)
 	file = fopen(filename, "w");
 	if (file == NULL)
 		return (-1);
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		fclose(file);
-		return (-1);
+		if (fprintf(file, "%s", text_content) < 0)
+		{
+			fclose(file);
+			return (-1);
+		}
 	}
-	fprintf(file, "%s", text_content);
 	fclose(file);
 	return (1);
 }
