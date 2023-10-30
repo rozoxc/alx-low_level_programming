@@ -80,7 +80,7 @@ int main(int ac, char **av)
 			return (99);
 		}
 		free(fp);
-		buff = malloc(sizeof(char) * BUFFER_SIZE);
+		fp = malloc(sizeof(char) * BUFFER_SIZE);
 		if (!fp)
 			return (101);
 	}
