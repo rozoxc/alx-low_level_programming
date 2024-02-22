@@ -4,6 +4,3 @@ EXECUTABLE = school
 all: $(EXECUTABLE)
 $(EXECUTABLE): $(SRC)
     $(CC) $^ -o $@
-clean:
-    rm -f $(EXECUTABLE)
-
