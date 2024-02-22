@@ -1,5 +1,9 @@
-CC  = gcc
+CC = gcc
 SRC = main.c school.c
-all:
-	gcc main.c school.c -o school
+EXECUTABLE = school
+all: $(EXECUTABLE)
+$(EXECUTABLE): $(SRC)
+    $(CC) $^ -o $@
+clean:
+    rm -f $(EXECUTABLE)
 
